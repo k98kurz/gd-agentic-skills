@@ -24,14 +24,14 @@ Expert component for bridging the gap between Godot and the Browser environment.
 
 ## JavaScriptBridge Communication
 Communicate with the surrounding webpage:
-- `var result = JavaScriptBridge.eval("window.innerWidth")`
+- `var window = JavaScriptBridge.get_interface("window"); var result = window.innerWidth`
 - Create callback objects for JavaScript to call GDScript: `JavaScriptBridge.create_callback(_on_js_call)`.
 
 ## Data Persistence (localStorage)
 Since `user://` is ephemeral or unreliable on some browsers:
 1. Stringify your data to JSON.
-2. Call `JavaScriptBridge.eval("localStorage.setItem('my_game_save', '" + json_str + "')")`.
-3. Retrieve data using `JavaScriptBridge.eval("localStorage.getItem('my_game_save')")`.
+2. Call `var storage = JavaScriptBridge.get_interface("localStorage"); storage.setItem("my_game_save", json_str)`.
+3. Retrieve data using `storage.getItem("my_game_save")`.
 
 ## Performance Benchmarking
 Web builds run significantly slower than native exports due to the WASM translation layer.

@@ -78,9 +78,11 @@ application/icon="res://icon.ico"
 
 ## Command-Line Export
 
-```powershell
-# Export from command line
+```bash
+# Export from command line (Linux/macOS)
 godot --headless --export-release "Windows Desktop" builds/game.exe
+godot --headless --export-release "Linux/X11" builds/game.x86_64
+godot --headless --export-release "macOS" builds/game.app
 
 # Export debug build
 godot --headless --export-debug "Windows Desktop" builds/game_debug.exe

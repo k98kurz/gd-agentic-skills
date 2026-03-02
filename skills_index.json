@@ -855,27 +855,6 @@
     ]
   },
   {
-    "name": "godot-mcp-scene-builder",
-    "description": "\"[MCP WRAPPER] Programmatically create/modify Godot scenes using Godot MCP tools. Orchestrates mcp_godot_create_scene, mcp_godot_add_node, mcp_godot_load_sprite into agentic workflows. Use when user requests scene generation/automation via MCP. Keywords MCP, scene automation, programmatic scene building, node hierarchy.\"",
-    "keywords": [
-      "MCP",
-      "scene automation",
-      "programmatic scene building",
-      "node hierarchy"
-    ]
-  },
-  {
-    "name": "godot-mcp-setup",
-    "description": "\"[PREREQUISITE] Install and configure Godot MCP server for programmatic scene manipulation via Model Context Protocol. Use when user explicitly requests MCP-based scene building or automation. NOT for manual Godot workflows. Keywords MCP, Model Context Protocol, scene automation, npx, claude_desktop_config.\"",
-    "keywords": [
-      "MCP",
-      "Model Context Protocol",
-      "scene automation",
-      "npx",
-      "claude_desktop_config"
-    ]
-  },
-  {
     "name": "godot-multiplayer-networking",
     "description": "\"Expert blueprint for multiplayer networking (Among Us, Brawlhalla, Terraria) using Godot's high-level API covering RPCs, state synchronization, authoritative servers, client prediction, and lobby systems. Use when building online multiplayer, LAN co-op, or networked games. Keywords multiplayer, RPC, ENetMultiplayerPeer, MultiplayerSynchronizer, authority, client prediction, rollback.\"",
     "keywords": [

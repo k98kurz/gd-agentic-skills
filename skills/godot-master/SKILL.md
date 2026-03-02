@@ -83,7 +83,6 @@ One of the most impactful expert-only decisions. The Godot docs explicitly say "
 2. **READ**: [Signal Architecture](references/godot-signal-architecture.md) — Create `GlobalSignalBus` autoload with < 15 events.
 3. **READ**: [GDScript Mastery](references/godot-gdscript-mastery.md) — Enable `untyped_declaration` warning in Project Settings → GDScript → Debugging.
 4. Apply **[Project Templates](references/godot-project-templates.md)** for base `.gitignore`, export presets, and input map.
-5. Use **[MCP Scene Builder](references/godot-mcp-scene-builder.md)** if available to generate scene hierarchies programmatically.
 **Do NOT load** combat, multiplayer, genre, or platform references during scaffolding.
 
 ### Workflow 2: Entity Orchestration
@@ -303,7 +302,7 @@ func _load_chunk_threaded(chunk_pos: Vector2i) -> void:
 > Load ONLY the modules needed for your current workflow. Use the Decision Matrix in Part 2 to determine which chain to follow.
 
 ### Architecture & Foundation
-[Foundations](references/godot-project-foundations.md) | [Composition](references/godot-composition.md) | [App Composition](references/godot-composition-apps.md) | [Signals](references/godot-signal-architecture.md) | [Autoloads](references/godot-autoload-architecture.md) | [States](references/godot-state-machine-advanced.md) | [Resources](references/godot-resource-data-patterns.md) | [Templates](references/godot-project-templates.md) | [MCP Setup](references/godot-mcp-setup.md) | [Skill Discovery](references/godot-skill-discovery.md) | [Skill Judge](references/godot-skill-judge.md)
+[Foundations](references/godot-project-foundations.md) | [Composition](references/godot-composition.md) | [App Composition](references/godot-composition-apps.md) | [Signals](references/godot-signal-architecture.md) | [Autoloads](references/godot-autoload-architecture.md) | [States](references/godot-state-machine-advanced.md) | [Resources](references/godot-resource-data-patterns.md) | [Templates](references/godot-project-templates.md) | [Skill Discovery](references/godot-skill-discovery.md) | [Skill Judge](references/godot-skill-judge.md)
 
 ### GDScript & Testing
 [GDScript Mastery](references/godot-gdscript-mastery.md) | [Testing Patterns](references/godot-testing-patterns.md) | [Debugging/Profiling](references/godot-debugging-profiling.md) | [Performance Optimization](references/godot-performance-optimization.md)
@@ -328,9 +327,6 @@ func _load_chunk_threaded(chunk_pos: Vector2i) -> void:
 
 ### Genre Blueprints
 [Action RPG](references/godot-genre-action-rpg.md) | [Shooter](references/godot-genre-shooter.md) | [RTS](references/godot-genre-rts.md) | [MOBA](references/godot-genre-moba.md) | [Rogue-like](references/godot-genre-roguelike.md) | [Survival](references/godot-genre-survival.md) | [Open World](references/godot-genre-open-world.md) | [Metroidvania](references/godot-genre-metroidvania.md) | [Platformer](references/godot-genre-platformer.md) | [Fighting](references/godot-genre-fighting.md) | [Stealth](references/godot-genre-stealth.md) | [Sandbox](references/godot-genre-sandbox.md) | [Horror](references/godot-genre-horror.md) | [Puzzle](references/godot-genre-puzzle.md) | [Racing](references/godot-genre-racing.md) | [Rhythm](references/godot-genre-rhythm.md) | [Sports](references/godot-genre-sports.md) | [Battle Royale](references/godot-genre-battle-royale.md) | [Card Game](references/godot-genre-card-game.md) | [Visual Novel](references/godot-genre-visual-novel.md) | [Romance](references/romance.md) | [Simulation](references/godot-genre-simulation.md) | [Tower Defense](references/godot-genre-tower-defense.md) | [Idle Clicker](references/godot-genre-idle-clicker.md) | [Party](references/godot-genre-party.md) | [Educational](references/godot-genre-educational.md)
-
-### MCP Tooling
-[MCP Scene Builder](references/godot-mcp-scene-builder.md)
 
 ---
 

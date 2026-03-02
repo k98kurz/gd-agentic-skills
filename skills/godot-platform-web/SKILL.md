@@ -52,7 +52,9 @@ engine.startGame({
 # Check if running in browser
 if OS.has_feature("web"):
     # Web-specific code
-    JavaScriptBridge.eval("console.log('Running in browser')")
+    var window = JavaScriptBridge.get_interface("window")
+    if window:
+        window.console.log("Running in browser")
 ```
 
 ## LocalStorage Save
@@ -63,13 +65,16 @@ func save_to_browser() -> void:
         return
     
     var data := JSON.stringify(get_save_data())
-    JavaScriptBridge.eval("localStorage.setItem('savegame', '%s')" % data)
+    var storage = JavaScriptBridge.get_interface("localStorage")
+    if storage:
+        storage.setItem("savegame", data)
 
 func load_from_browser() -> Dictionary:
     if not OS.has_feature("web"):
         return {}
     
-    var data_str := JavaScriptBridge.eval("localStorage.getItem('savegame')")
+    var storage = JavaScriptBridge.get_interface("localStorage")
+    var data_str := storage.getItem("savegame") if storage else ""
     if data_str:
         return JSON.parse_string(data_str)
     return {}
